@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Review Order</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#007A8D",
+            "background-light": "#F9F9F7",
+            "background-dark": "#101c22",
+            "text-light": "#2C3E50",
+            "text-dark": "#E5E7EB",
+            "subtext-light": "#6b7280",
+            "subtext-dark": "#9ca3af",
+            "border-light": "#e5e7eb",
+            "border-dark": "#374151"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex h-16 items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 justify-between">
+<div class="flex items-center gap-2">
+<button class="flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl text-text-light dark:text-text-dark">arrow_back</span>
+</button>
+</div>
+<h1 class="text-lg font-bold">Review Order</h1>
+<div class="size-10 shrink-0"></div> <!-- Spacer -->
+</header>
+<main class="flex-1 pb-36 px-4">
+<!-- Order Items Section -->
+<section class="mt-4">
+<div class="flex flex-col gap-4 rounded-lg bg-white dark:bg-zinc-800 p-4 shadow-sm">
+<h2 class="text-base font-bold text-text-light dark:text-text-dark">Items in Your Cart</h2>
+<!-- List Item 1 -->
+<div class="flex items-start gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-[70px] shrink-0" data-alt="A person wearing a light blue t-shirt with a Kava Culture logo on it" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNR3GLb9sp8I60ZhGdP0uTLbc2iHppF-GhpbFd_4bWU6jV3wrWqx9bRpWmpklyZftkeWARjVnuyj8pguVYjQeqAuyEaZJ4t2oDEjgzUymGvdVlkdp3c1ePvpfrk0-iiyQOPV18e3j9vLIMQ-CmooH-TQTotdxGHpee5Mysfw7O7cdlITJJt_z95sl1hrcc1YKsErHenHq6mHR5HhGI0JPg9z8bY1_1bG2ueR6iJK-oQrDZV3u8MqO6NtHNzRGqOo27H0KkWhwZG3E");'></div>
+<div class="flex flex-1 flex-col justify-center gap-1">
+<p class="text-base font-medium text-text-light dark:text-text-dark leading-tight">Kava Culture Tee</p>
+<p class="text-sm font-normal text-subtext-light dark:text-subtext-dark leading-tight">Qty: 1</p>
+<p class="text-sm font-normal text-subtext-light dark:text-subtext-dark leading-tight">Size: M, Color: Ocean Blue</p>
+</div>
+<div class="shrink-0"><p class="text-base font-medium text-text-light dark:text-text-dark leading-normal">$35.00</p></div>
+</div>
+<hr class="border-t border-border-light dark:border-border-dark"/>
+<!-- List Item 2 -->
+<div class="flex items-start gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-[70px] shrink-0" data-alt="A beige snapback hat with a sunrise logo on the front" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCchKFMu97gYpcI2cH0IU-Ktv9tr2JUaKeRgTfjtSfl4u55eN1BHL5DaT0W08ZYtvr5hPWJ6tEQRrMoCZzsbPZ_jDqpTqNvaV7QJgpqSbyCwQf69iAC0MtbIMY7H7TpUJWJ9I7ulIuR-j5ZlcQnTYVr8aw-NUfVmNn8gMulj9rJIkSGq2IylnI6bGB0mMhPsnwTHgtLSVLAYfVhyTTk-bok32lrsoVQflqmOi7ELEwXeFD_MJ2ZrPJOWQMKRUWEy9K-3KyybzCoe8U");'></div>
+<div class="flex flex-1 flex-col justify-center gap-1">
+<p class="text-base font-medium text-text-light dark:text-text-dark leading-tight">Sunrise Snapback Hat</p>
+<p class="text-sm font-normal text-subtext-light dark:text-subtext-dark leading-tight">Qty: 1</p>
+<p class="text-sm font-normal text-subtext-light dark:text-subtext-dark leading-tight">Color: Sandy Beige</p>
+</div>
+<div class="shrink-0"><p class="text-base font-medium text-text-light dark:text-text-dark leading-normal">$28.00</p></div>
+</div>
+</div>
+</section>
+<!-- Shipping Section -->
+<section class="mt-6">
+<h3 class="text-lg font-bold px-1 pb-2">Shipping to</h3>
+<div class="flex items-center gap-4 bg-white dark:bg-zinc-800 p-4 min-h-[72px] rounded-lg shadow-sm justify-between">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined text-primary text-2xl">local_shipping</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium text-text-light dark:text-text-dark line-clamp-1">Jane Doe</p>
+<p class="text-sm font-normal text-subtext-light dark:text-subtext-dark line-clamp-2">123 Ocean Ave, Venice, CA 90291</p>
+<p class="text-sm font-normal text-subtext-light dark:text-subtext-dark mt-1">Standard Shipping: 3-5 Days</p>
+</div>
+</div>
+<button class="text-primary text-base font-medium leading-normal shrink-0">Edit</button>
+</div>
+</section>
+<!-- Payment Section -->
+<section class="mt-6">
+<h3 class="text-lg font-bold px-1 pb-2">Payment</h3>
+<div class="flex items-center gap-4 bg-white dark:bg-zinc-800 p-4 min-h-[72px] rounded-lg shadow-sm justify-between">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined text-primary text-2xl">credit_card</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium text-text-light dark:text-text-dark line-clamp-1">Visa</p>
+<p class="text-sm font-normal text-subtext-light dark:text-subtext-dark line-clamp-1">**** **** **** 1234</p>
+</div>
+</div>
+<button class="text-primary text-base font-medium leading-normal shrink-0">Edit</button>
+</div>
+</section>
+<!-- Order Totals Section -->
+<section class="mt-6">
+<div class="flex flex-col gap-3 rounded-lg bg-white dark:bg-zinc-800 p-4 shadow-sm">
+<div class="flex justify-between items-center">
+<p class="text-base text-subtext-light dark:text-subtext-dark">Subtotal</p>
+<p class="text-base font-medium text-text-light dark:text-text-dark">$63.00</p>
+</div>
+<div class="flex justify-between items-center">
+<p class="text-base text-subtext-light dark:text-subtext-dark">Shipping</p>
+<p class="text-base font-medium text-text-light dark:text-text-dark">$5.00</p>
+</div>
+<div class="flex justify-between items-center">
+<p class="text-base text-subtext-light dark:text-subtext-dark">Taxes</p>
+<p class="text-base font-medium text-text-light dark:text-text-dark">$4.72</p>
+</div>
+<hr class="border-t border-border-light dark:border-border-dark my-2"/>
+<div class="flex justify-between items-center">
+<p class="text-lg font-bold text-text-light dark:text-text-dark">Total</p>
+<p class="text-lg font-bold text-text-light dark:text-text-dark">$72.72</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Footer with CTA -->
+<footer class="fixed bottom-0 left-0 right-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4 border-t border-border-light dark:border-border-dark">
+<button class="w-full bg-primary text-white font-bold py-4 px-6 rounded-lg text-lg h-14 flex items-center justify-center shadow-lg shadow-primary/20 hover:bg-primary/90 transition-colors">
+        Place Order
+      </button>
+</footer>
+</div>
+</body></html>

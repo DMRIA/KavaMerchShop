@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Secure Payment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#005A7A", // Deep, oceanic blue
+                        "secondary": "#FF8C42", // Warm, sun-kissed orange
+                        "background-light": "#F8F7F4", // Off-white/light sand
+                        "background-dark": "#221c10", // Keeping this for consistency, though the design is light-themed
+                        "text-primary": "#333333", // Dark charcoal grey
+                        "text-secondary": "#666666",
+                        "border-color": "#E0E0E0",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem", // slightly smaller for a cleaner look
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-text-primary flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Secure Payment</h2>
+<div class="text-text-primary flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-secondary">lock</span>
+</div>
+</div>
+<div class="flex-grow px-4">
+<!-- Segmented Buttons for Payment Method -->
+<div class="flex py-3">
+<div class="flex h-12 flex-1 items-center justify-center rounded-full bg-gray-200/50 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-full px-2 has-[:checked]:bg-primary has-[:checked]:shadow-md has-[:checked]:text-white text-text-secondary text-sm font-medium leading-normal transition-all duration-300">
+<span class="truncate">Credit Card</span>
+<input checked="" class="invisible w-0" name="payment-method" type="radio" value="Credit Card"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-full px-2 has-[:checked]:bg-primary has-[:checked]:shadow-md has-[:checked]:text-white text-text-secondary text-sm font-medium leading-normal transition-all duration-300">
+<span class="truncate">PayPal</span>
+<input class="invisible w-0" name="payment-method" type="radio" value="PayPal"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-full px-2 has-[:checked]:bg-primary has-[:checked]:shadow-md has-[:checked]:text-white text-text-secondary text-sm font-medium leading-normal transition-all duration-300">
+<span class="truncate">Apple Pay</span>
+<input class="invisible w-0" name="payment-method" type="radio" value="Apple Pay"/>
+</label>
+</div>
+</div>
+<!-- Cardholder Name TextField -->
+<div class="flex max-w-[480px] flex-wrap items-end gap-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-text-primary text-base font-medium leading-normal pb-2">Name on Card</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-color bg-white focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal" placeholder="Kava Surfer" value=""/>
+</label>
+</div>
+<!-- Card Number TextField -->
+<div class="flex max-w-[480px] flex-wrap items-end gap-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-text-primary text-base font-medium leading-normal pb-2">Card Number</p>
+<div class="flex w-full flex-1 items-stretch">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-l-lg text-text-primary focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-color bg-white focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] border-r-0 pr-2 text-base font-normal leading-normal" placeholder="0000 0000 0000 0000" value=""/>
+<div class="text-text-secondary flex border border-border-color bg-white items-center justify-center px-[15px] rounded-r-lg border-l-0">
+<span class="material-symbols-outlined">credit_card</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Expiration Date & CVV TextField -->
+<div class="flex w-full flex-wrap items-end gap-4 py-3">
+<label class="flex flex-col min-w-0 flex-1">
+<p class="text-text-primary text-base font-medium leading-normal pb-2">Expiry Date</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-color bg-white focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal" placeholder="MM/YY" value=""/>
+</label>
+<label class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1 pb-2">
+<p class="text-text-primary text-base font-medium leading-normal">Security Code</p>
+<span class="material-symbols-outlined text-text-secondary/80 !text-base cursor-pointer">help_outline</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-color bg-white focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal" placeholder="CVV" value=""/>
+</label>
+</div>
+<!-- Save for next time Checkbox -->
+<div class="flex items-center py-4">
+<input class="form-checkbox h-5 w-5 rounded border-border-color text-primary focus:ring-primary/50" id="save-card" type="checkbox"/>
+<label class="ml-3 text-base text-text-primary font-medium" for="save-card">Save for next time</label>
+</div>
+<!-- Billing Address Section -->
+<div class="border-t border-border-color pt-4 mt-2">
+<div class="flex items-center justify-between">
+<p class="text-text-primary text-base font-medium">Billing Address</p>
+<a class="text-sm font-semibold text-primary" href="#">Change</a>
+</div>
+<p class="text-text-secondary mt-1">Same as shipping address</p>
+</div>
+</div>
+<!-- Sticky Footer -->
+<div class="sticky bottom-0 mt-6 bg-white/80 backdrop-blur-sm p-4 border-t border-border-color">
+<!-- Order Summary -->
+<div class="flex justify-between items-center mb-4">
+<span class="text-text-secondary font-medium">Order Total</span>
+<span class="text-text-primary text-2xl font-bold">$99.00</span>
+</div>
+<!-- Primary CTA Button -->
+<button class="flex w-full items-center justify-center rounded-lg bg-primary p-4 text-center">
+<span class="text-lg font-bold text-white">Pay $99.00</span>
+</button>
+<!-- Security Badges -->
+<div class="flex items-center justify-center gap-2 pt-4">
+<span class="material-symbols-outlined text-text-secondary/60 !text-lg">verified_user</span>
+<p class="text-xs text-text-secondary/80">Your payment is safe and secure</p>
+</div>
+</div>
+</div>
+</body></html>

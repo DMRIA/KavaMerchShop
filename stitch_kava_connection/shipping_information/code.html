@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shipping Information - Kava Merch</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#007A7C",
+                        "secondary": "#D2B48C",
+                        "text-primary": "#333333",
+                        "text-secondary": "#555555",
+                        "background-light": "#F8F7F4",
+                        "background-dark": "#1A1A1A",
+                        "border-light": "#EAE8E4",
+                        "border-dark": "#333333",
+                    },
+                    fontFamily: {
+                        "display": ["Poppins", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden" style='font-family: "Poppins", "Noto Sans", sans-serif;'>
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-text-primary dark:text-white flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h1 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center font-display">Shipping Information</h1>
+<div class="w-12"></div>
+</div>
+<!-- Progress Indicator (Simplified version of PageIndicators) -->
+<div class="flex w-full flex-row items-center justify-center gap-2 px-4 py-3 font-body text-sm">
+<span class="text-text-secondary dark:text-gray-400">Cart</span>
+<span class="material-symbols-outlined text-text-secondary dark:text-gray-400 text-base">chevron_right</span>
+<span class="font-bold text-primary dark:text-primary">Shipping</span>
+<span class="material-symbols-outlined text-text-secondary dark:text-gray-400 text-base">chevron_right</span>
+<span class="text-text-secondary dark:text-gray-400">Payment</span>
+</div>
+<main class="flex-1 px-4 py-2">
+<!-- Contact Information Section -->
+<div class="mb-6">
+<h2 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-tight px-0 pb-2 pt-4 font-display">Contact Information</h2>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col w-full">
+<p class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2 font-body">Email Address</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal font-body" placeholder="Enter your email" value="aloha@example.com"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2 font-body">Phone Number</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal font-body" placeholder="Enter your phone number" value=""/>
+</label>
+</div>
+</div>
+<!-- Shipping Address Section -->
+<div class="mb-6">
+<h2 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-tight px-0 pb-2 pt-4 font-display">Delivery Address</h2>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col w-full">
+<p class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2 font-body">Full Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal font-body" placeholder="Enter your full name" value=""/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2 font-body">Street Address</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal font-body" placeholder="e.g. 123 Beachside Drive" value=""/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2 font-body">Apt, suite, etc. (Optional)</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal font-body" placeholder="e.g. Apartment 2B" value=""/>
+</label>
+<div class="flex flex-row gap-4">
+<label class="flex flex-col flex-1">
+<p class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2 font-body">City</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal font-body" placeholder="City" value=""/>
+</label>
+<label class="flex flex-col flex-1">
+<p class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2 font-body">ZIP Code</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary/70 p-[15px] text-base font-normal leading-normal font-body" placeholder="ZIP" value=""/>
+</label>
+</div>
+<label class="flex flex-col w-full">
+<p class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2 font-body">Country</p>
+<div class="relative">
+<select class="form-select appearance-none w-full rounded-lg text-text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark focus:border-primary dark:focus:border-primary h-14 p-[15px] text-base font-normal leading-normal font-body">
+<option>United States</option>
+<option>Canada</option>
+<option>Australia</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-text-secondary dark:text-gray-400 pointer-events-none">expand_more</span>
+</div>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-3 py-4">
+<input class="form-checkbox h-5 w-5 rounded border-secondary/50 text-primary focus:ring-primary" id="billing_same" type="checkbox"/>
+<label class="text-text-primary dark:text-gray-200 text-base font-medium font-body" for="billing_same">Billing address is the same as shipping</label>
+</div>
+<!-- Shipping Method Section -->
+<div class="mb-8">
+<h2 class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-tight px-0 pb-2 pt-4 font-display">Choose a Shipping Method</h2>
+<div class="flex flex-col gap-3">
+<label class="flex cursor-pointer items-center justify-between rounded-lg border-2 border-primary bg-primary/10 dark:bg-primary/20 p-4">
+<div class="flex items-center gap-3">
+<input checked="" class="form-radio h-5 w-5 border-secondary/50 text-primary focus:ring-primary" name="shipping" type="radio"/>
+<div>
+<p class="font-bold text-text-primary dark:text-white font-body">Standard Shipping</p>
+<p class="text-sm text-text-secondary dark:text-gray-300 font-body">Est. delivery: 5-7 business days</p>
+</div>
+</div>
+<p class="font-bold text-text-primary dark:text-white font-body">$5.00</p>
+</label>
+<label class="flex cursor-pointer items-center justify-between rounded-lg border border-border-light dark:border-border-dark p-4">
+<div class="flex items-center gap-3">
+<input class="form-radio h-5 w-5 border-secondary/50 text-primary focus:ring-primary" name="shipping" type="radio"/>
+<div>
+<p class="font-bold text-text-primary dark:text-white font-body">Express Shipping</p>
+<p class="text-sm text-text-secondary dark:text-gray-300 font-body">Est. delivery: 2-3 business days</p>
+</div>
+</div>
+<p class="font-bold text-text-primary dark:text-white font-body">$15.00</p>
+</label>
+</div>
+</div>
+</main>
+<!-- Footer with CTA -->
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark p-4 pt-2 border-t border-border-light dark:border-border-dark">
+<button class="flex w-full items-center justify-center rounded-lg bg-primary h-14 px-6 text-lg font-bold text-white shadow-md transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] font-display">Continue to Payment</button>
+</footer>
+</div>
+</body></html>

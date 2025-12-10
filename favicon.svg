@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Coconut Shell (Kumete/Bilo style) -->
+  <path d="M4 24C4 39.464 16.536 52 32 52C47.464 52 60 39.464 60 24H4Z" fill="#3E2723"/>
+  
+  <!-- Kava Liquid -->
+  <path d="M8 24C8 36 18 48 32 48C46 48 56 36 56 24H8Z" fill="#A1887F"/>
+  
+  <!-- Surface Reflection/Detail -->
+  <path d="M12 24C12 26 20 28 32 28C44 28 52 26 52 24" stroke="#D7CCC8" stroke-width="2" stroke-opacity="0.5"/>
+</svg>
